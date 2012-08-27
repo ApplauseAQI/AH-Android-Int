@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.support.v4.app.NavUtils;
 
 import com.apphance.android.Apphance;
+import com.apphance.android.Log;
 
 public class MainActivity extends Activity {
 	
