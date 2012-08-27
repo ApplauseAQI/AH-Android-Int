@@ -11,6 +11,23 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        
+		<activity
+		    android:name="com.apphance.android.ui.LoginActivity"    
+		    android:launchMode="singleInstance">
+		</activity>
+		 
+		<activity
+		    android:name="com.apphance.android.ui.TestCycleActivity"    
+		    android:launchMode="singleInstance">
+		</activity>
+		 
+		<activity
+		    android:name="com.apphance.android.ui.ProblemActivity"
+		    android:configChanges="orientation"
+		    android:launchMode="singleInstance">
+		</activity>        
+        
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main" >
