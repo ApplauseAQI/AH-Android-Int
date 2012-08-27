@@ -13,6 +13,11 @@
         android:theme="@style/AppTheme" >
         
 		<activity
+		  android:name="com.apphance.android.LauncherActivity"
+		  android:theme="@android:style/Theme.Translucent.NoTitleBar">
+		</activity>        
+        
+		<activity
 		    android:name="com.apphance.android.ui.LoginActivity"    
 		    android:launchMode="singleInstance">
 		</activity>
