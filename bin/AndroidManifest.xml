@@ -56,6 +56,6 @@
     
 	<instrumentation
 	   android:name="com.apphance.android.ApphanceInstrumentation"
-	   android:targetPackage="com.example.REPLACE.THIS"></instrumentation>    
+	   android:targetPackage="com.example.helloworldapphanceintegration"></instrumentation>    
 
 </manifest>
