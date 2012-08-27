@@ -53,5 +53,9 @@
             </intent-filter>
         </activity>
     </application>
+    
+	<instrumentation
+	   android:name="com.apphance.android.ApphanceInstrumentation"
+	   android:targetPackage="com.example.REPLACE.THIS"></instrumentation>    
 
 </manifest>
