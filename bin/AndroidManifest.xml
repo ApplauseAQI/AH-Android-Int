@@ -1,3 +1,6 @@
+<!--  This manifest shows you how to configure Apphance in pre-production mode. -->
+<!--  For more information about the content of this manifest, please visit: -->
+<!--  http://help.apphance.com/library-installation/android/tutorial-pre-production -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.helloworldapphanceintegration"
     android:versionCode="1"
