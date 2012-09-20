@@ -54,7 +54,7 @@ There are several additional Apphance settings in the manifest file as well. You
 
 For more information about using Apphance, visit our online [help topics](http://help.apphance.com).  
 
-If have additional questions, email us at: [help@apphance.com](mailto:help@apphance.com)
+If you have additional questions, email us at: [help@apphance.com](mailto:help@apphance.com)
 
 ## What is uTest Apphance?
 
