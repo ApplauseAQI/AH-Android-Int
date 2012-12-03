@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
         /********************************/
         // The following line of code actually starts an Apphance session in QA mode.
         // Learn more by visiting http://help.apphance.com/library-installation/android/starting-session
-        Apphance.startNewSession(this, APP_KEY, Apphance.Mode.QA);
+        Apphance.startNewSession(this, APP_KEY, Apphance.Mode.QA, false);
         
         setContentView(R.layout.activity_main);
         
