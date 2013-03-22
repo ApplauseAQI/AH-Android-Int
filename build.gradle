@@ -1,0 +1,16 @@
+buildscript {
+    repositories {
+        maven{
+            url "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath ('com.apphance.ameba:Ameba:1.0-SNAPSHOT')
+    }
+}
+
+apply plugin: 'ameba'
+
+
