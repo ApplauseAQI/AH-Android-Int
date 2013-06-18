@@ -4,70 +4,37 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.helloworldapphanceintegration"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.9" >
 
-    <uses-sdk
-        android:minSdkVersion="7"
-        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
 
-	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
-	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
-	<uses-permission android:name="android.permission.GET_TASKS"></uses-permission>
-	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
-	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
-	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
-	<uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>    
-    
-    <application
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
-        
-		<activity
-		  android:name="com.apphance.android.LauncherActivity"
-		  android:theme="@android:style/Theme.Translucent.NoTitleBar">
-		</activity>        
-        
-		<activity
-		    android:name="com.apphance.android.ui.LoginActivity"    
-		    android:launchMode="singleInstance">
-		</activity>
-		 
-		<activity
-		    android:name="com.apphance.android.ui.TestCycleActivity"    
-		    android:launchMode="singleInstance">
-		</activity>
-		 
-		<activity
-		    android:name="com.apphance.android.ui.ProblemActivity"
-		    android:configChanges="orientation"
-		    android:launchMode="singleInstance">
-		</activity>        
+    <uses-sdk android:minSdkVersion="8"/>
 
-		<activity-alias
-		     android:name=".ApphanceLauncherActivity"    
-		     android:targetActivity="com.apphance.android.LauncherActivity">
-		         <intent-filter>
-		            <action android:name="android.intent.action.MAIN"></action>
-		            <category android:name="android.intent.category.LAUNCHER"></category>
-		         </intent-filter>
-		</activity-alias>
-		
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main" >
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+
+        <activity android:name=".MainActivity"
+                  android:configChanges="orientation"
+                  android:label="@string/app_name">
             <intent-filter>
-                
-				<action android:name="com.apphance.android.LAUNCH"></action>
-         		<category android:name="android.intent.category.DEFAULT"></category>
-
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity
+                android:name="com.apphance.android.ui.ProblemActivity"
+                android:configChanges="orientation"
+                android:launchMode="singleInstance"
+                android:process="com.utest.apphance.reporteditor">
+        </activity>
+
     </application>
-    
-	<instrumentation
-	   android:name="com.apphance.android.ApphanceInstrumentation"
-	   android:targetPackage="com.example.helloworldapphanceintegration"></instrumentation>    
 
 </manifest>
