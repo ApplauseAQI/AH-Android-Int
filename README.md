@@ -1,8 +1,15 @@
 # Apphance Android HelloWorld Example
 
-This repository contains a working example of uTest Apphance in a very simple Android app. To compile this example, you'll first need to install [Eclipse](http://www.eclipse.org/) and the [Android SDKs](http://developer.android.com/sdk/index.html). When installing the Android SDKs, be mindful that this example has been configured to use Android version 2.1 (API 7) by default. 
+This repository contains a working example of uTest Apphance in a very simple Android app. 
+To build this project you have a few choices:
 
-## Installation Steps
+1. Build by Ant
+2. Build my Maven
+3. Build manually within your IDE
+
+Whichever method you choose, there are some preparation steps:
+
+## Preparation Steps - obtaining uTest Apphance License Key
 
 ### 1. Create a free account with uTest Apphance
 
@@ -18,17 +25,16 @@ Tell Apphance the name of your application and the platform on which it runs (iO
 
 Once you've added a new application in Apphance, you'll be given a unique application key. You'll need to add this to your code in just a few minutes, so keep it readily available. (You can always retrieve this key later if you need it. It's available in the Apphance web panel within the "Settings" menu on the left.)
 
+## Instalation Steps
+
 ### 4. Download or clone this git repository to your local computer
 
 You can either clone this repository or download a zip file - whichever works for you.
+You can import project to your favourite IDE (e.g. Eclipse or Android Studio) or decide to build app from command line by Ant or Maven.
 
-### 5. Import the project into Eclipse
+### 5. Open the MainActivity file
 
-Once you have downloaded the repository to your computer, open Eclipse and choose File -> Import. Select "Android" and then "Existing Android Code Into Workspace". Hit Next and then browse to the path of the repository you just downloaded. Click Finish to complete the importing process.
-
-### 6. Open the MainActivity file
-
-Expand the project to see the included folders. Locate src -> com.example.helloworldapphanceintegration -> MainActivity.java. Double click on the MainActivity.java file to open it.
+Find a MainActivity class. 
 
 ### 7. Place your app key in the MainActivity
 
@@ -42,7 +48,29 @@ Replace the string *Your-Apphance-Application-Key-Goes-Here* with the applicatio
 
 ### 8. Compile and run your app
 
-Click on the green Run arrow in the toolbar. If everything is setup correctly, this very basic application should compile and load in a simulator.
+#### Ant
+<code>
+$ ant debug
+$ adb install bin/apphance-integration-sample-debug.apk
+</code>
+
+#### Maven:
+
+First install dependencies:
+<code>
+$ cd libs_mvn
+$ mvn install:install-file -Dfile=apphance-library-1.9.jar -DgroupId=com.apphance.android -DartifactId=apphance-library -Dpackaging=jar -Dversion=1.9
+$ mvn install:install-file -Dfile=apphance-library-1.9.apklib -DgroupId=com.apphance.android -DartifactId=apphance-library -Dpackaging=apklib -Dversion=1.9
+<code>
+
+Then build and run app:
+<code>
+$ mvn clean install
+$ adb install target/helloworld-apphance-integration-1.0.apk 
+</code>
+
+#### IDE
+Import project to you favourite IDE and run it
 
 For more help, take a look at our online instructions for configuring [Apphance with your Android apps](http://help.apphance.com/library-installation/android/).
 
