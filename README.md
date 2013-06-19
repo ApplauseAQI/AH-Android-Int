@@ -51,6 +51,7 @@ Replace the string *Your-Apphance-Application-Key-Goes-Here* with the applicatio
 #### Ant
 <code>
 $ ant debug
+
 $ adb install bin/apphance-integration-sample-debug.apk
 </code>
 
