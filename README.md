@@ -40,34 +40,27 @@ Find a MainActivity class.
 
 Locate a line that looks like:
 
-<code>
 	public static final String APP_KEY = "Your-Apphance-Application-Key-Goes-Here";
-</code>
 
 Replace the string *Your-Apphance-Application-Key-Goes-Here* with the application key from Step 3.
 
 ### 8. Compile and run your app
 
 #### Ant
-<code>
-ant debug
-adb install bin/apphance-integration-sample-debug.apk
-</code>
+	ant debug
+	adb install bin/apphance-integration-sample-debug.apk
 
 #### Maven:
 
 First install dependencies:
-<code>
-cd libs_mvn
-mvn install:install-file -Dfile=apphance-library-1.9.jar -DgroupId=com.apphance.android -DartifactId=apphance-library -Dpackaging=jar -Dversion=1.9
-mvn install:install-file -Dfile=apphance-library-1.9.apklib -DgroupId=com.apphance.android -DartifactId=apphance-library -Dpackaging=apklib -Dversion=1.9
-<code>
+	cd libs_mvn
+	mvn install:install-file -Dfile=apphance-library-1.9.jar -DgroupId=com.apphance.android -DartifactId=apphance-library -Dpackaging=jar -Dversion=1.9
+	mvn install:install-file -Dfile=apphance-library-1.9.apklib -DgroupId=com.apphance.android -DartifactId=apphance-library -Dpackaging=apklib -Dversion=1.9
+
 
 Then build and run app:
-<code>
-mvn clean install
-adb install target/helloworld-apphance-integration-1.0.apk 
-</code>
+	mvn clean install
+	adb install target/helloworld-apphance-integration-1.0.apk 
 
 #### IDE
 Import project to you favourite IDE and run it
