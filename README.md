@@ -53,12 +53,14 @@ Replace the string *Your-Apphance-Application-Key-Goes-Here* with the applicatio
 #### Maven:
 
 First install dependencies:
+	
 	cd libs_mvn
 	mvn install:install-file -Dfile=apphance-library-1.9.jar -DgroupId=com.apphance.android -DartifactId=apphance-library -Dpackaging=jar -Dversion=1.9
 	mvn install:install-file -Dfile=apphance-library-1.9.apklib -DgroupId=com.apphance.android -DartifactId=apphance-library -Dpackaging=apklib -Dversion=1.9
 
 
 Then build and run app:
+	
 	mvn clean install
 	adb install target/helloworld-apphance-integration-1.0.apk 
 
