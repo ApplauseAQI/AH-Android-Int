@@ -50,24 +50,23 @@ Replace the string *Your-Apphance-Application-Key-Goes-Here* with the applicatio
 
 #### Ant
 <code>
-$ ant debug
-
-$ adb install bin/apphance-integration-sample-debug.apk
+ant debug
+adb install bin/apphance-integration-sample-debug.apk
 </code>
 
 #### Maven:
 
 First install dependencies:
 <code>
-$ cd libs_mvn
-$ mvn install:install-file -Dfile=apphance-library-1.9.jar -DgroupId=com.apphance.android -DartifactId=apphance-library -Dpackaging=jar -Dversion=1.9
-$ mvn install:install-file -Dfile=apphance-library-1.9.apklib -DgroupId=com.apphance.android -DartifactId=apphance-library -Dpackaging=apklib -Dversion=1.9
+cd libs_mvn
+mvn install:install-file -Dfile=apphance-library-1.9.jar -DgroupId=com.apphance.android -DartifactId=apphance-library -Dpackaging=jar -Dversion=1.9
+mvn install:install-file -Dfile=apphance-library-1.9.apklib -DgroupId=com.apphance.android -DartifactId=apphance-library -Dpackaging=apklib -Dversion=1.9
 <code>
 
 Then build and run app:
 <code>
-$ mvn clean install
-$ adb install target/helloworld-apphance-integration-1.0.apk 
+mvn clean install
+adb install target/helloworld-apphance-integration-1.0.apk 
 </code>
 
 #### IDE
