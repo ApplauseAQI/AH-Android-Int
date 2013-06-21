@@ -10,3 +10,4 @@ log/
 .gradle/
 local.properties
 target/
+build/
