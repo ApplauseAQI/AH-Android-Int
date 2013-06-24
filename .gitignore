@@ -11,3 +11,4 @@ log/
 local.properties
 target/
 build/
+gen-external-apklibs/
