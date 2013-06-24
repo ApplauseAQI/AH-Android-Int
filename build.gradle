@@ -8,9 +8,9 @@ buildscript {
 }
 
 apply plugin: 'android'
+apply plugin: 'maven'
 
 repositories {
-    mavenCentral()
     mavenLocal()
 }
 
