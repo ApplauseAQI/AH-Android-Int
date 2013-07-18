@@ -1,15 +1,14 @@
 # Apphance Android HelloWorld Example
 
-This repository contains a working example of uTest Apphance in a very simple Android app. 
-To build this project you have a few choices:
+This repository contains a working example of uTest Apphance in a very simple Android app. To build this project you have a few choices:
 
-1. Build by Maven
-2. Build my Gradle
-3. Build manually within your IDE
+1. Build using Maven
+2. Build using Gradle
+3. Build manually using your IDE
 
-Whichever method you choose, there are some preparation steps:
+Just follow a few simple steps to get started:
 
-## Preparation Steps - obtaining uTest Apphance License Key
+## Preparation Steps - Obtain an Apphance Key
 
 ### 1. Create a free account with uTest Apphance
 
@@ -25,40 +24,43 @@ Tell Apphance the name of your application and the platform on which it runs (iO
 
 Once you've added a new application in Apphance, you'll be given a unique application key. You'll need to add this to your code in just a few minutes, so keep it readily available. (You can always retrieve this key later if you need it. It's available in the Apphance web panel within the "Settings" menu on the left.)
 
-## Instalation Steps
+## Installation Steps
 
 ### 4. Download or clone this git repository to your local computer
 
 You can either clone this repository or download a zip file - whichever works for you.
-You can import project to your favourite IDE (e.g. Eclipse or Android Studio) or decide to build app from command line by Ant or Maven.
 
-### 5. Open the MainActivity file
+### 5. Import the project into your IDE
 
-Find a MainActivity class. 
+Import this project into your favorite IDE (e.g. Eclipse or Android Studio).
+
+### 6. Open the MainActivity file
+
+In your IDE, expand the project to see the included folders. Locate src -> com.example.helloworldapphanceintegration -> MainActivity.java. Double click on the MainActivity.java file to open it.
 
 ### 7. Place your app key in the MainActivity
 
-Locate a line that looks like:
+In the MainActivity file, locate a line that looks like this:
 
 	public static final String APP_KEY = "Your-Apphance-Application-Key-Goes-Here";
 
 Replace the string *Your-Apphance-Application-Key-Goes-Here* with the application key from Step 3.
 
-### 8. Compile and run your app
+### 8. Compile and run your app 
 
-#### Maven:
+#### With Maven Command Line:
 	
 	mvn clean install
 	adb install target/helloworld-apphance-integration-1.0.apk 
 
+#### With Gradle Command Line:
 
-#### Gradle:
 	gradle clean build
 	adb install build/apk/AH-Android-Int-debug-unaligned.apk 
 
-#### IDE
-Import project to you favourite IDE and run it. Depending on how you would import his project into your IDE and what is your IDE
-you may need to download Apphance as a ZIP Android library project. For more help, take a look at our online instructions for configuring [Apphance with your Android apps](http://help.apphance.com/library-installation/android/).
+#### With your IDE
+
+Simply compile and run the app like you would normally with your IDE. If you are not using Maven or Gradle, we have included a recent version of the Apphance library with this sample app.
 
 ## Manifest File
 
@@ -72,4 +74,4 @@ If you have additional questions, email us at: [help@apphance.com](mailto:help@a
 
 ## What is uTest Apphance?
 
-uTest Apphance enables mobile developers to know precisely how their apps are working in the test lab and in the wild. A single library enables over-the-air app distribution, crash reports, in-app bug reports and user feedback. Now developers can discover in real time precisely what’s working – and what’s not – with their iOS, Android, Windows Phone, Kindle Fire and Nook apps. Learn more by visiting [apphance.com](http://www.apphance.com).
+uTest Apphance enables mobile developers to know precisely how their apps are working in the test lab and in the wild. A single library enables over-the-air app distribution, crash reports, in-app bug reports and user feedback. Now developers can discover in real time precisely what’s working – and what’s not – with their iOS, Android, and Windows Phone. Learn more by visiting [apphance.com](http://www.apphance.com).
