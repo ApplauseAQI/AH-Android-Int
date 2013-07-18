@@ -8,7 +8,7 @@ This repository contains a working example of uTest Apphance in a very simple An
 
 Just follow a few simple steps to get started:
 
-## Preparation Steps - obtaining uTest Apphance License Key
+## Preparation Steps - Obtain an Apphance Key
 
 ### 1. Create a free account with uTest Apphance
 
@@ -32,7 +32,7 @@ You can either clone this repository or download a zip file - whichever works fo
 
 ### 5. Import the project into your IDE
 
-Import project into your favorite IDE (e.g. Eclipse or Android Studio), or you can build the app from the command line using Ant or Maven.
+Import this project into your favorite IDE (e.g. Eclipse or Android Studio).
 
 ### 6. Open the MainActivity file
 
@@ -40,7 +40,7 @@ In your IDE, expand the project to see the included folders. Locate src -> com.e
 
 ### 7. Place your app key in the MainActivity
 
-Locate a line that looks like:
+In the MainActivity file, locate a line that looks like this:
 
 	public static final String APP_KEY = "Your-Apphance-Application-Key-Goes-Here";
 
@@ -48,19 +48,19 @@ Replace the string *Your-Apphance-Application-Key-Goes-Here* with the applicatio
 
 ### 8. Compile and run your app 
 
-#### With Maven:
+#### With Maven Command Line:
 	
 	mvn clean install
 	adb install target/helloworld-apphance-integration-1.0.apk 
 
-#### With Gradle:
+#### With Gradle Command Line:
 
 	gradle clean build
 	adb install build/apk/AH-Android-Int-debug-unaligned.apk 
 
 #### With your IDE
 
-A recent version of the Apphance library has been included with this version. Simply compile and run the app like you would normally with your IDE.
+Simply compile and run the app like you would normally with your IDE. If you are not using Maven or Gradle, we have included a recent version of the Apphance library with this sample app.
 
 ## Manifest File
 
