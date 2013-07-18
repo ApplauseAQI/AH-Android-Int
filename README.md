@@ -3,9 +3,9 @@
 This repository contains a working example of uTest Apphance in a very simple Android app. 
 To build this project you have a few choices:
 
-1. Build by Maven
-2. Build my Gradle
-3. Build manually within your IDE
+1. Build using Maven
+2. Build using Gradle
+3. Build manually using your IDE
 
 Whichever method you choose, there are some preparation steps:
 
@@ -25,16 +25,17 @@ Tell Apphance the name of your application and the platform on which it runs (iO
 
 Once you've added a new application in Apphance, you'll be given a unique application key. You'll need to add this to your code in just a few minutes, so keep it readily available. (You can always retrieve this key later if you need it. It's available in the Apphance web panel within the "Settings" menu on the left.)
 
-## Instalation Steps
+## Installation Steps
 
 ### 4. Download or clone this git repository to your local computer
 
 You can either clone this repository or download a zip file - whichever works for you.
-You can import project to your favourite IDE (e.g. Eclipse or Android Studio) or decide to build app from command line by Ant or Maven.
+
+Import project into your favorite IDE (e.g. Eclipse or Android Studio), or you can build the app from the command line using Ant or Maven.
 
 ### 5. Open the MainActivity file
 
-Find a MainActivity class. 
+Find the MainActivity class. 
 
 ### 7. Place your app key in the MainActivity
 
@@ -51,13 +52,14 @@ Replace the string *Your-Apphance-Application-Key-Goes-Here* with the applicatio
 	mvn clean install
 	adb install target/helloworld-apphance-integration-1.0.apk 
 
-
 #### Gradle:
+
 	gradle clean build
 	adb install build/apk/AH-Android-Int-debug-unaligned.apk 
 
 #### IDE
-Import project to you favourite IDE and run it. Depending on how you would import his project into your IDE and what is your IDE
+
+Import the project into you favorite IDE and run it. Depending on how you would import his project into your IDE and what is your IDE
 you may need to download Apphance as a ZIP Android library project. For more help, take a look at our online instructions for configuring [Apphance with your Android apps](http://help.apphance.com/library-installation/android/).
 
 ## Manifest File
