@@ -6,7 +6,7 @@ This repository contains a working example of uTest Apphance in a very simple An
 2. Build using Gradle
 3. Build manually using your IDE
 
-Whichever method you choose, there are some preparation steps:
+Just follow a few simple steps to get started:
 
 ## Preparation Steps - obtaining uTest Apphance License Key
 
