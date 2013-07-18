@@ -1,7 +1,6 @@
 # Apphance Android HelloWorld Example
 
-This repository contains a working example of uTest Apphance in a very simple Android app. 
-To build this project you have a few choices:
+This repository contains a working example of uTest Apphance in a very simple Android app. To build this project you have a few choices:
 
 1. Build using Maven
 2. Build using Gradle
@@ -31,11 +30,13 @@ Once you've added a new application in Apphance, you'll be given a unique applic
 
 You can either clone this repository or download a zip file - whichever works for you.
 
+### 5. Import the project into your IDE
+
 Import project into your favorite IDE (e.g. Eclipse or Android Studio), or you can build the app from the command line using Ant or Maven.
 
-### 5. Open the MainActivity file
+### 6. Open the MainActivity file
 
-Find the MainActivity class. 
+In your IDE, expand the project to see the included folders. Locate src -> com.example.helloworldapphanceintegration -> MainActivity.java. Double click on the MainActivity.java file to open it.
 
 ### 7. Place your app key in the MainActivity
 
@@ -45,22 +46,21 @@ Locate a line that looks like:
 
 Replace the string *Your-Apphance-Application-Key-Goes-Here* with the application key from Step 3.
 
-### 8. Compile and run your app
+### 8. Compile and run your app 
 
-#### Maven:
+#### With Maven:
 	
 	mvn clean install
 	adb install target/helloworld-apphance-integration-1.0.apk 
 
-#### Gradle:
+#### With Gradle:
 
 	gradle clean build
 	adb install build/apk/AH-Android-Int-debug-unaligned.apk 
 
-#### IDE
+#### With your IDE
 
-Import the project into you favorite IDE and run it. Depending on how you would import his project into your IDE and what is your IDE
-you may need to download Apphance as a ZIP Android library project. For more help, take a look at our online instructions for configuring [Apphance with your Android apps](http://help.apphance.com/library-installation/android/).
+A recent version of the Apphance library has been included with this version. Simply compile and run the app like you would normally with your IDE.
 
 ## Manifest File
 
@@ -74,4 +74,4 @@ If you have additional questions, email us at: [help@apphance.com](mailto:help@a
 
 ## What is uTest Apphance?
 
-uTest Apphance enables mobile developers to know precisely how their apps are working in the test lab and in the wild. A single library enables over-the-air app distribution, crash reports, in-app bug reports and user feedback. Now developers can discover in real time precisely what’s working – and what’s not – with their iOS, Android, Windows Phone, Kindle Fire and Nook apps. Learn more by visiting [apphance.com](http://www.apphance.com).
+uTest Apphance enables mobile developers to know precisely how their apps are working in the test lab and in the wild. A single library enables over-the-air app distribution, crash reports, in-app bug reports and user feedback. Now developers can discover in real time precisely what’s working – and what’s not – with their iOS, Android, and Windows Phone. Learn more by visiting [apphance.com](http://www.apphance.com).
