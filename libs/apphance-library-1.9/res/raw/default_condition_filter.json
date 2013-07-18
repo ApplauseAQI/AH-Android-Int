@@ -1,9 +1,0 @@
-{
-    "screen" : true,
-    "power" : false,
-    "location" : true,
-    "networking" : true,
-    "telephony" : false,
-    "system" : false,
-    "custom" : false
-}

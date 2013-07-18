@@ -18,16 +18,15 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- See libs_mvn/README.txt to install following dependencies -->
         <dependency>
-            <groupId>com.apphance.android</groupId>
-            <artifactId>apphance-library</artifactId>
+            <groupId>com.utest</groupId>
+            <artifactId>apphance-preprod</artifactId>
             <version>1.9</version>
             <type>apklib</type>
         </dependency>
         <dependency>
-            <groupId>com.apphance.android</groupId>
-            <artifactId>apphance-library</artifactId>
+            <groupId>com.utest</groupId>
+            <artifactId>apphance-preprod</artifactId>
             <version>1.9</version>
             <type>jar</type>
         </dependency>
@@ -47,7 +46,7 @@
                     </sdk>
                     <undeployBeforeDeploy>true</undeployBeforeDeploy>
                 </configuration>
-            </plugin>
+            </plugin>	    
         </plugins>
     </build>
 </project>

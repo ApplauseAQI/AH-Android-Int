@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.4.2'
+        classpath 'com.android.tools.build:gradle:0.5.+'
     }
 }
 
@@ -11,11 +11,12 @@ apply plugin: 'android'
 apply plugin: 'maven'
 
 repositories {
+    mavenCentral()
     mavenLocal()
 }
 
 dependencies {
-    compile 'com.apphance.android:apphance-library:1.9'
+    compile 'com.utest:apphance-preprod:1.9'
 }
 
 android {
