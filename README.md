@@ -3,8 +3,8 @@
 This repository contains a working example of uTest Apphance in a very simple Android app. 
 To build this project you have a few choices:
 
-1. Build by Ant
-2. Build my Maven
+1. Build by Maven
+2. Build my Gradle
 3. Build manually within your IDE
 
 Whichever method you choose, there are some preparation steps:
@@ -46,28 +46,19 @@ Replace the string *Your-Apphance-Application-Key-Goes-Here* with the applicatio
 
 ### 8. Compile and run your app
 
-#### Ant
-	ant debug
-	adb install bin/apphance-integration-sample-debug.apk
-
 #### Maven:
-
-First install dependencies:
-	
-	cd libs_mvn
-	mvn install:install-file -Dfile=apphance-library-1.9.jar -DgroupId=com.apphance.android -DartifactId=apphance-library -Dpackaging=jar -Dversion=1.9
-	mvn install:install-file -Dfile=apphance-library-1.9.apklib -DgroupId=com.apphance.android -DartifactId=apphance-library -Dpackaging=apklib -Dversion=1.9
-
-
-Then build and run app:
 	
 	mvn clean install
 	adb install target/helloworld-apphance-integration-1.0.apk 
 
-#### IDE
-Import project to you favourite IDE and run it
 
-For more help, take a look at our online instructions for configuring [Apphance with your Android apps](http://help.apphance.com/library-installation/android/).
+#### Gradle:
+	gradle clean build
+	adb install build/apk/AH-Android-Int-debug-unaligned.apk 
+
+#### IDE
+Import project to you favourite IDE and run it. Depending on how you would import his project into your IDE and what is your IDE
+you may need to download Apphance as a ZIP Android library project. For more help, take a look at our online instructions for configuring [Apphance with your Android apps](http://help.apphance.com/library-installation/android/).
 
 ## Manifest File
 
