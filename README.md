@@ -2,9 +2,10 @@
 
 This repository contains a working example of uTest Apphance in a very simple Android app. To build this project you have a few choices:
 
-1. Build using Maven
-2. Build using Gradle
-3. Build manually using your IDE
+1. Build using Ant
+2. Build using Maven
+3. Build using Gradle
+4. Build manually using your IDE
 
 Just follow a few simple steps to get started:
 
@@ -47,6 +48,11 @@ In the MainActivity file, locate a line that looks like this:
 Replace the string *Your-Apphance-Application-Key-Goes-Here* with the application key from Step 3.
 
 ### 8. Compile and run your app 
+
+#### With Ant Command Line:
+	
+	ant debug
+	adb install bin/apphance-integration-sample-debug.apk
 
 #### With Maven Command Line:
 	
