@@ -8,4 +8,4 @@
     <corners android:bottomRightRadius="4dip" android:bottomLeftRadius="4dip" 
      android:topLeftRadius="4dip" android:topRightRadius="4dip"/>
     <stroke android:color="@color/outline_color" android:width="1dip" />
-</shape> 
+</shape> <!-- From: file:/home/mgrzechocinski/dev/utest/AH-Android-Lib/apphance-lib/res/drawable/green_button_pressed.xml -->

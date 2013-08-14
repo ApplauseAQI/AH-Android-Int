@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- From: file:/home/mgrzechocinski/dev/utest/AH-Android-Lib/apphance-lib/res/values/ui.xml -->
     <color name="background_color">#dee9f0</color>
     <color name="background_primary">#40be4c</color>
     <color name="background_secondary">#ffffff</color>
     <color name="emphasize_color">#5D7A8C</color>
+    <!-- From: file:/home/mgrzechocinski/dev/utest/AH-Android-Lib/apphance-lib/res/values/colors.xml -->
     <color name="green">#10b000</color>
+    <!-- From: file:/home/mgrzechocinski/dev/utest/AH-Android-Lib/apphance-lib/res/values/ui.xml -->
     <color name="outline_color">#bec9d0</color>
     <color name="text_primary">#ffffff</color>
     <color name="text_secondary">#000000</color>
+    <!-- From: file:/home/mgrzechocinski/dev/utest/AH-Android-Lib/apphance-lib/res/values/colors.xml -->
     <color name="white">#FFFFFF</color>
-
+    <!-- From: file:/home/mgrzechocinski/dev/utest/AH-Android-Lib/apphance-lib/res/values/string.xml -->
     <string name="app_name">apphance</string>
+    <!-- From: file:/home/mgrzechocinski/dev/utest/AH-Android-Lib/apphance-lib/res/values/ui.xml -->
     <string name="clear_overlay">Clear</string>
     <string name="edit_overlay">Edit</string>
     <string name="login_anon_login_button">Anonymous Login</string>
@@ -67,15 +72,19 @@
     <string name="settings_enabled">Enabled</string>
     <string name="settings_enabled_summary">Whether Apphance should report applications\' logs</string>
     <string name="settings_menu_start_service">Start service</string>
+    <!-- From: file:/home/mgrzechocinski/dev/utest/AH-Android-Lib/apphance-lib/res/values/test.xml -->
     <string name="test_api_key">f4cba2f6ca4afb2ba91b90e01c00d45c</string>
+    <!-- From: file:/home/mgrzechocinski/dev/utest/AH-Android-Lib/apphance-lib/res/values/ui.xml -->
     <string name="test_cycles_hint">Please select your test cycle from the list below:</string>
     <string name="test_cycles_manual">If you are a uTester, please provide your Test Cycle ID.</string>
     <string name="test_cycles_title">Test cycles</string>
+    <!-- From: file:/home/mgrzechocinski/dev/utest/AH-Android-Lib/apphance-lib/res/values/test.xml -->
     <string name="test_ui_group">Group</string>
     <string name="test_ui_level">Level</string>
     <string name="test_ui_message_hint">Enter message here</string>
     <string name="test_ui_report">Report</string>
     <string name="test_ui_type">Type</string>
+    <!-- From: file:/home/mgrzechocinski/dev/utest/AH-Android-Lib/apphance-lib/res/values/ui.xml -->
     <string name="toast_application_blocked">Your application has expired and can not be run at this time.</string>
     <string name="toast_application_inactive">This application does not have an active subscription set up. Please contact application\'s owners.</string>
     <string name="toast_email_changed">You need to restart tested application(s) for e-mail change to take effect.</string>
