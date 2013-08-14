@@ -12,3 +12,7 @@ local.properties
 target/
 build/
 gen-external-apklibs/
+.classpath
+.settings/
+.project
+.
