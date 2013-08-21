@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.utest:apphance-preprod:1.9.3'
+    compile 'com.utest:apphance-preprod:1.9.3@aar'
 }
 
 android {
