@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
      * ****************************
      */
     // You must insert your Apphance application key in the next line of code:
-    public static final String APP_KEY = "3e3898a09a7c0c96e0acfd966876dc6a000c39e7";// "Your-Apphance-Application-Key-Goes-Here";
+    public static final String APP_KEY = "Your-Apphance-Application-Key-Goes-Here";
 
     // If you do not have an Apphance application key, you must first create a
     // free account. Visit http://www.apphance.com for more information about
