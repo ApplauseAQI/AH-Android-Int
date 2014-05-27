@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
     // panel at: https://sdk.applause.com
     // Create a new application (if you have not done so already). Your
     // application key can be retrieved at any time from the "Settings" tab
-    // on the left menu.
+    // on the right menu.
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -52,8 +52,7 @@ public class MainActivity extends Activity {
 
         if (APP_KEY.equals("Your-Applause-Application-Key-Goes-Here")) {
             Toast.makeText(this, "You have not provided Applause Application Key in MainActivity.APP_KEY",
-                    Toast.LENGTH_SHORT).show();
-            finish();
+                    Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -64,26 +63,11 @@ public class MainActivity extends Activity {
         // Configuration object uses builder pattern, so you can chain calls and
         // make the process of creation more compact.
         IBuilder builder = new Configuration.Builder(this);
-        builder = builder.withServerURL("https://sdk.applause.com"); // specify
-        // server,
-        // skip
-        // for
-        // default
-        // ("http://panel.Applause.com")
         builder = builder.withAPIKey(APP_KEY); // specify app key
-        builder = builder.withReportOnShakeEnabled(true); // report on shake
-        // feature is on by
-        // default
-        builder = builder.withUTestEnabled(false); // you can turn features used
-        // by utest emplyoees on,
-        // it's off by default
-//        builder = builder.withDefaultUser("anonymous@apphance.com"); // specify
-        // user to
-        // log in
-        // as, skip
-        // for
-        // manual
-        // selection
+
+        // disable with uTest integration for demo purposes
+        builder = builder.withUTestEnabled(false);
+
 
         Configuration configuration = builder.build();
 
@@ -92,14 +76,14 @@ public class MainActivity extends Activity {
         /********************************/
         // The following line of code actually starts an Applause session in QA
         // mode. Learn more by visiting
-        // http://help.Applause.com/library-installation/android/starting-session
+        // https://help.applause.com/hc/en-us/articles/201954883-Android-SDK-Pre-Production-Installation-Guide
         Applause.startNewSession(this, configuration);
 
         /*************************/
         /* Logging with Applause */
         /*************************/
         // Applause can replace the default logging mechanism with its own
-        // mechanism, assuming you import com.Applause.android.Log. See above
+        // mechanism, assuming you import com.applause.android.Log. See above
         // for more details.
         Log.w("myTag", "This log message will be sent to Applause.");
     }
