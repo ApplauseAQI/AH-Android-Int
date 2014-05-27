@@ -70,4 +70,4 @@ If you have additional questions, email us at: [help@applause.com](mailto:help@a
 
 ## What is uTest Applause?
 
-uTest Applause enables mobile developers to know precisely how their apps are working in the test lab and in the wild. A single library enables over-the-air app distribution, crash reports, in-app bug reports and user feedback. Now developers can discover in real time precisely what’s working – and what’s not – with their iOS, Android, and Windows Phone. Learn more by visiting [apphance.com](http://www.apphance.com).
+uTest Applause enables mobile developers to know precisely how their apps are working in the test lab and in the wild. A single library enables over-the-air app distribution, crash reports, in-app bug reports and user feedback. Now developers can discover in real time precisely what’s working – and what’s not – with their iOS, Android, and Windows Phone. Learn more by visiting [applause.com](http://www.applause.com).
