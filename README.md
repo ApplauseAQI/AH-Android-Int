@@ -2,10 +2,8 @@
 
 This repository contains a working example of uTest Apphance in a very simple Android app. To build this project you have a few choices:
 
-1. Build using Ant
-2. Build using Maven
-3. Build using Gradle
-4. Build manually using your IDE
+1. Build using Gradle
+2. Build manually using your IDE
 
 Just follow a few simple steps to get started:
 
