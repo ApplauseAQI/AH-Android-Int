@@ -4,17 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Toast;
 import com.applause.android.Applause;
-import com.applause.android.Log;
-import com.applause.android.common.IBuilder;
-import com.applause.android.config.Configuration;
-
-
-/***********************************/
-/* Configure Logging with Applause */
-
-/**
- * *******************************
- */
 // The next line will import Applause's built-in logging methods. You should use
 // these in place of Android's regular logging methods. Applause's methods
 // automatically send log messages to the Applause servers where you can review
@@ -22,15 +11,14 @@ import com.applause.android.config.Configuration;
 // logging methods will still make your log entries available locally in Logcat.
 // Learn more by visiting
 // https://help.applause.com/hc/en-us/articles/201954883-Android-SDK-Pre-Production-Installation-Guide
+import com.applause.android.Log;
+import com.applause.android.common.IBuilder;
+import com.applause.android.config.Configuration;
 
 public class MainActivity extends Activity {
 
     /************************************/
     /* Application Key for for Applause */
-
-    /**
-     * ****************************
-     */
     // You must insert your Applause application key in the next line of code:
     public static final String APP_KEY = "Your-Applause-Application-Key-Goes-Here";
 
