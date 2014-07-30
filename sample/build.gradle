@@ -3,8 +3,8 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.12.+'
-        classpath 'com.jakewharton.sdkmanager:gradle-plugin:0.12.+'
+        classpath 'com.android.tools.build:gradle:+'
+        classpath 'com.jakewharton.sdkmanager:gradle-plugin:+'
     }
 }
 
@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.applause:applause-sdk-preprod:2.1.0@aar'
+    compile 'com.applause:applause-sdk-preprod:+@aar'
 }
 
 android {
