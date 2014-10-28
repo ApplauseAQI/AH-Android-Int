@@ -12,7 +12,7 @@ import com.applause.android.Applause;
 // Learn more by visiting
 // https://help.applause.com/hc/en-us/articles/201954883-Android-SDK-Pre-Production-Installation-Guide
 import com.applause.android.Log;
-import com.applause.android.common.IBuilder;
+import com.applause.android.config.IBuilder;
 import com.applause.android.config.Configuration;
 
 public class MainActivity extends Activity {
@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
     /************************************/
     /* Application Key for for Applause */
     // You must insert your Applause application key in the next line of code:
-    public static final String APP_KEY = "Your-Applause-Application-Key-Goes-Here";
+    public static final String APP_KEY = "6c4f676aa1b02fbf6566477bad458f42b6f48911";
 
     // If you do not have an Applause application key, you must first create a
     // free account. Visit http://www.applause.com for more information about
